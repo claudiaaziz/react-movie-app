@@ -1,10 +1,10 @@
 import MovieIndexItem from "./MovieIndexItem";
 
-const MovieList = ({ movies }) => {
+const MovieList = ({ movies, handleFavoritesClick, FavoriteComponent }) => {
 
   return (
     <>
-      {movies.map(movie => <MovieIndexItem movie={movie} key={movie.Title+movie.Year}/>)}
+      {movies.map(movie => <MovieIndexItem movie={movie} key={movie.Title+movie.Year} FavoriteComponent={FavoriteComponent} handleFavoritesClick={handleFavoritesClick}/>)}
     </>
   )
 }
