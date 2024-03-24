@@ -1,10 +1,10 @@
+import MovieIndexItem from "./MovieIndexItem";
+
 const MovieList = ({ movies }) => {
 
   return (
     <>
-      {movies.map(movie => <div> refactor 
-
-      </div>)}
+      {movies.map(movie => <MovieIndexItem movie={movie}/>)}
     </>
   )
 }

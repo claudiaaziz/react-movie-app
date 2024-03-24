@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <MovieList />
+      <MovieList movies={movies}/>
     </div>
   );
 }
