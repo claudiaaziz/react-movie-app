@@ -3,13 +3,13 @@ body {
   color: white;
 }
 
-img {
-  width: 200px;
-}
-
 .movie-app > .row {
   overflow-x: auto;
   flex-wrap: nowrap;
+}
+
+img {
+  width: 200px;
 }
 
 .image-container {
