@@ -1,9 +1,12 @@
+import AddFavorites from "./AddFavorites";
+
 const MovieIndexItem = ({ movie }) => {
   return (
-    <div className="d-flex justify-content-start m-3">
+    <div className="image-container d-flex justify-content-start m-3">
       <img src={movie.Poster} alt={movie.Title} />
-      {/* <h2>{movie.Title}</h2> */}
-      {/* <p>{movie.Year}</p> */}
+      <div className="overlay d-flex align-items-center justify-content-center">
+        <AddFavorites />
+      </div>
     </div>
   )
 }
