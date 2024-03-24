@@ -4,7 +4,7 @@ const MovieList = ({ movies }) => {
 
   return (
     <>
-      {movies.map(movie => <MovieIndexItem movie={movie} key={movie.Title}/>)}
+      {movies.map(movie => <MovieIndexItem movie={movie} key={movie.Title+movie.Year}/>)}
     </>
   )
 }
